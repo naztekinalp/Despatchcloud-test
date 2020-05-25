@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Despatch Cloud</title>
+	<link rel="icon" href="images/tabicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<!--Navigation-->
+		<nav class="navbar sticky-top" style="background-color: #ffffff;">
+			<img src="images/toggler.png" alt="toggler" />
+			<a class="navbar-brand ml-4" href="#"><a href="index.html"> <img src="images/brand.png"/></a>
+			<form class="form-inline ml-4 mr-auto">
+				<img src="images/search.png" alt="search" />
+				<input
+					class="form-control no-border mr-sm-2"
+					type="search"
+					placeholder="Search here"
+					aria-label="Search"/>
+      </form>
+      <div class="userInfo mt-auto ml-auto">
+        <p class="userName">Corey Cross</p>
+        <p class="userRole">Administrator</p>
+      </div>
+			<ul class="navbar-nav nav-flex-icons">
+						<div class="container">
+							<div class="d-flex justify-content-center h-100">
+								<div class="outer_container">
+									<div class="green_icon"></div>
+									<div class="inner_container"><p>CC</p></div>
+								</div>
+							</div>
+						</div>
+			</ul>
+					
+		</nav> 
+
+		<!--Left Bar-->
+		<div class ="row  my-auto" style="width: 1662px;  ">
+		<div class="col-sm-2 mt-4 fixed-left"> 
+
+		<div class="row ml-0 ">
+			<div class="createTicket text-center">Create Ticket <img src="images/createticket.png"  style="padding-inline-start: 30px;">
+			</div>
+		</div>
+
+		<div class="row ml-3 mt-4 mb-3">
+			<h1 style="padding-right: 60px;">Tickets</h1>
+				<div class="d-flex justify-content-center h-100" >
+					<div class="tickets ml-5">43
+					</div>
+				</div>
+		</div>
+
+		<div class="row ml-3 mb-2">
+			<span class="open"></span>
+				<h5 style="padding-right:125px"> <b>Open</b></h5>
+				<h5><b>43</b></h5>
+		</div>
+
+		<div class="row ml-3 mb-2">
+			<span class="awaitingreply"></span>
+			<h5 style="padding-right:70px"> Awaiting Reply</h5>
+			<h5>2</h5>
+		</div>
+
+		<div class="row ml-3 mb-2">
+			<span class="resolved"></span>
+			<h5 style="padding-right:104px"> Resolved</h5>
+			<h5>12</h5>
+		</div>
+
+		<div class="row ml-3 mb-2">
+			<span class="archived"></span>
+			<h5 style="padding-right:94px"> <b>Archieved</b></h5>
+			<h5><b>60</b></h5>
+		</div>
+
+		<div class="row ml-3 mb-2 mt-5">
+			<h1>Priority</h1>
+			<br>
+		</div>
+
+		<div class="row ml-3 mb-2">
+			<span class="urgent"></span>
+			<h5 style="padding-right:115px"> <b>Urgent</b></h5>
+			<h5><b>43</b></h5>
+		</div>
+
+		<div class="row ml-3 mb-2">
+			<span class="high"></span>
+			<h5 style="padding-right:135px">High</h5>
+			<h5>2</h5>
+		</div>
+
+		<div class="row ml-3 mb-2">
+			<span class="medium"></span>
+			<h5 style="padding-right:105px"> <b>Medium</b></h5>
+			<h5><b>43</b></h5>
+		</div>
+
+		<div class="row ml-3 mb-2">
+			<span class="low"></span>
+			<h5 style="padding-right:140px">Low</h5>
+			<h5>2</h5>
+		</div>
+
+		<div class  = "row ml-3 mb-2 mt-5">
+			<h1>Tags</h1>
+		</div>
+
+		<div class="row ml-0 mb-3" >
+				<form class="form-inline ml-1 mr-auto">
+						<input
+							id="drawerSearch"
+							class="form-control no-border mr-sm-2"
+							type="search"
+							placeholder="Search for tag"
+							aria-label="Search"
+						/>
+			  </form>
+		</div>
+
+		<div class="row ml-3">
+			<div class="col pl-0" style="margin-right: 10px;">
+				<h5>Trash</h5>
+				<div class="trash ml-5">x</div>
+			</div>
+			
+			<div class="col pl-0" style="margin-right: 70px;">
+				<h5>Jackets</h5>
+				<div class="trash ml-5">x</div>
+			</div>
+		</div>
+
+		<div class="row ml-3">
+			<div class="col pl-0">
+				<h5>Jackets</h5>
+				<div class="trash ml-5">x</div>
+			</div>
+			
+			<div class="col pl-0" style="margin-right: 50px;">
+				<h5>Jumper</h5>
+				<div class="trash ml-5">x</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!--Middle Bar-->
+	<div class ="col-8 pl-3 " style="height:50%; width:50%;background-color:#f5f6f6; border-left-color:#f1efef; border-left-width: 6px;   border-left-style: solid;"> 
+	
+		<div class ="row mt-4 ">
+			<div class="tick ml-3"> <img src="images/tick.png" alt=""></div>
+			<h6  style="padding-left: 6px;"> Select All</h6>
+		</div>
+
+		<div class ="row justify-content-center">
+			<h6>11th July 2019</h6> 
+		</div>
+		<!--Message Box-->
+		<div class="row"> 
+			<div class ="col" style="padding-top: 25px;">
+					<div class="tick"> <img src="images/tick.png" alt=""></div>
+			</div>
+
+			<div class="container" id="message"> 
+				<div class ="row">
+
+					<div class="col-0 my-3 ml-1">
+						<img src="images/messageicon.png" alt="">
+					</div>
+
+					<div class="col-3 mt-3">
+						<h4 style="margin-bottom: 3px;"> Matthew Dunne </h4>
+						<h5> Migration to Shopify <span style="color: #25bbf3;">(#4345)</span> </h5>
+					</div>
+			
+					<div class="col-0 mt-3" style="padding-top:10px;">
+						<p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr </p>
+					</div>
+
+				<div class="col-sm mt-3" style="padding-top:10px; padding-left:40px;">
+					<h1 style="color: #2ecc71; font-family: Poppins;
+					font-size: 14px;"> Medium</h1>
+				</div>
+
+				<div class="col-s mt-3" style="padding-top:10px; padding-left:40px;">
+					<h5> 12 hours ago</h5>
+					</div>
+
+					<div class="col-sm mt-3 mr-0" style=" padding-left:30px;">
+							<div class="d-flex ">
+								<div class="outer_container">
+									<div class="inner_container">
+										<p>CC</p>
+									</div>
+								</div>
+							</div>
+					</div>
+				</div>
+		</div>
+		</div>
+
+		<!--Message Box-->
+		<div class="row"> 
+				<div class ="col" style="padding-top: 25px;">
+						<div class="tick"> <img src="images/tick.png" alt=""></div>
+				</div>
+	
+				<div class="container" id="message"> 
+					<div class ="row">
+	
+						<div class="col-0 my-3 ml-1">
+							<img src="images/messageicon.png" alt="">
+						</div>
+	
+						<div class="col-3 mt-3">
+							<h4 style="margin-bottom: 3px;"> Matthew Dunne </h4>
+							<h5> Migration to Shopify <span style="color: #25bbf3;">(#4345)</span> </h5>
+						</div>
+				
+						<div class="col-0 mt-3" style="padding-top:10px;">
+							<p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr </p>
+						</div>
+	
+					<div class="col-sm mt-3" style="padding-top:10px; padding-left:40px;">
+						<h1 style="color: #2ecc71; font-family: Poppins;
+						font-size: 14px;"> Medium</h1>
+					</div>
+	
+					<div class="col-s mt-3" style="padding-top:10px; padding-left:40px;">
+						<h5> 12 hours ago</h5>
+						</div>
+	
+						<div class="col-sm mt-3 mr-0" style=" padding-left:30px;">
+								<div class="d-flex ">
+									<div class="outer_container">
+										<div class="inner_container">
+											<p>CC</p>
+										</div>
+									</div>
+								</div>
+						</div>
+					</div>
+			</div>
+			</div>
+
+		<!--Message Box-->
+		<div class="row"> 
+				<div class ="col" style="padding-top: 25px;">
+						<div class="tick"> <img src="images/tick.png" alt=""></div>
+				</div>
+	
+				<div class="container" id="message"> 
+					<div class ="row">
+	
+						<div class="col-0 my-3 ml-1">
+							<img src="images/messageicon.png" alt="">
+						</div>
+	
+						<div class="col-3 mt-3">
+							<h4 style="margin-bottom: 3px;"> Matthew Dunne </h4>
+							<h5> Migration to Shopify <span style="color: #25bbf3;">(#4345)</span> </h5>
+						</div>
+				
+						<div class="col-0 mt-3" style="padding-top:10px;">
+							<p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr </p>
+						</div>
+	
+					<div class="col-sm mt-3" style="padding-top:10px; padding-left:40px;">
+						<h1 style="color: #2ecc71; font-family: Poppins;
+						font-size: 14px;"> Medium</h1>
+					</div>
+	
+					<div class="col-s mt-3" style="padding-top:10px; padding-left:40px;">
+						<h5> 12 hours ago</h5>
+						</div>
+	
+						<div class="col-sm mt-3 mr-0" style=" padding-left:30px;">
+								<div class="d-flex ">
+									<div class="outer_container">
+										<div class="inner_container">
+											<p>CC</p>
+										</div>
+									</div>
+								</div>
+						</div>
+					</div>
+			</div>
+			</div>
+
+		<!--Message Box-->
+		<div class="row"> 
+				<div class ="col" style="padding-top: 25px;">
+						<div class="tick"> <img src="images/tick.png" alt=""></div>
+				</div>
+	
+				<div class="container" id="message"> 
+					<div class ="row">
+	
+						<div class="col-0 my-3 ml-1">
+							<img src="images/messageicon.png" alt="">
+						</div>
+	
+						<div class="col-3 mt-3">
+							<h4 style="margin-bottom: 3px;"> Matthew Dunne </h4>
+							<h5> Migration to Shopify <span style="color: #25bbf3;">(#4345)</span> </h5>
+						</div>
+				
+						<div class="col-0 mt-3" style="padding-top:10px;">
+							<p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr </p>
+						</div>
+	
+					<div class="col-sm mt-3" style="padding-top:10px; padding-left:40px;">
+						<h1 style="color: #2ecc71; font-family: Poppins;
+						font-size: 14px;"> Medium</h1>
+					</div>
+	
+					<div class="col-s mt-3" style="padding-top:10px; padding-left:40px;">
+						<h5> 12 hours ago</h5>
+						</div>
+	
+						<div class="col-sm mt-3 mr-0" style=" padding-left:30px;">
+								<div class="d-flex ">
+									<div class="outer_container">
+										<div class="inner_container">
+											<p>CC</p>
+										</div>
+									</div>
+								</div>
+						</div>
+					</div>
+			</div>
+			</div>
+		<div class ="row justify-content-center mt-3">
+			<h6>12th July 2019</h6> 
+		</div>
+
+		<!--Message Box-->
+		<div class="row"> 
+				<div class ="col" style="padding-top: 25px;">
+						<div class="tick"> <img src="images/tick.png" alt=""></div>
+				</div>
+	
+				<div class="container" id="message"> 
+					<div class ="row">
+	
+						<div class="col-0 my-3 ml-1">
+							<img src="images/messageicon.png" alt="">
+						</div>
+	
+						<div class="col-3 mt-3">
+							<h4 style="margin-bottom: 3px;"> Matthew Dunne </h4>
+							<h5> Migration to Shopify <span style="color: #25bbf3;">(#4345)</span> </h5>
+						</div>
+				
+						<div class="col-0 mt-3" style="padding-top:10px;">
+							<p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr </p>
+						</div>
+	
+					<div class="col-sm mt-3" style="padding-top:10px; padding-left:40px;">
+						<h1 style="color: #2ecc71; font-family: Poppins;
+						font-size: 14px;"> Medium</h1>
+					</div>
+	
+					<div class="col-s mt-3" style="padding-top:10px; padding-left:40px;">
+						<h5> 12 hours ago</h5>
+						</div>
+	
+						<div class="col-sm mt-3 mr-0" style=" padding-left:30px;">
+								<div class="d-flex ">
+									<div class="outer_container">
+										<div class="inner_container">
+											<p>CC</p>
+										</div>
+									</div>
+								</div>
+						</div>
+					</div>
+			</div>
+			</div>
+
+		<!--Message Box-->
+		<div class="row"> 
+				<div class ="col" style="padding-top: 25px;">
+						<div class="tick"> <img src="images/tick.png" alt=""></div>
+				</div>
+	
+				<div class="container" id="message"> 
+					<div class ="row">
+	
+						<div class="col-0 my-3 ml-1">
+							<img src="images/messageicon.png" alt="">
+						</div>
+	
+						<div class="col-3 mt-3">
+							<h4 style="margin-bottom: 3px;"> Matthew Dunne </h4>
+							<h5> Migration to Shopify <span style="color: #25bbf3;">(#4345)</span> </h5>
+						</div>
+				
+						<div class="col-0 mt-3" style="padding-top:10px;">
+							<p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr </p>
+						</div>
+	
+					<div class="col-sm mt-3" style="padding-top:10px; padding-left:40px;">
+						<h1 style="color: #2ecc71; font-family: Poppins;
+						font-size: 14px;"> Medium</h1>
+					</div>
+	
+					<div class="col-s mt-3" style="padding-top:10px; padding-left:40px;">
+						<h5> 12 hours ago</h5>
+						</div>
+	
+						<div class="col-sm mt-3 mr-0" style=" padding-left:30px;">
+								<div class="d-flex ">
+									<div class="outer_container">
+										<div class="inner_container">
+											<p>CC</p>
+										</div>
+									</div>
+								</div>
+						</div>
+					</div>
+			</div>
+			</div>
+
+		<!--Message Box-->
+		<div class="row"> 
+				<div class ="col" style="padding-top: 25px;">
+						<div class="tick"> <img src="images/tick.png" alt=""></div>
+				</div>
+	
+				<div class="container" id="message"> 
+					<div class ="row">
+	
+						<div class="col-0 my-3 ml-1">
+							<img src="images/messageicon.png" alt="">
+						</div>
+	
+						<div class="col-3 mt-3">
+							<h4 style="margin-bottom: 3px;"> Matthew Dunne </h4>
+							<h5> Migration to Shopify <span style="color: #25bbf3;">(#4345)</span> </h5>
+						</div>
+				
+						<div class="col-0 mt-3" style="padding-top:10px;">
+							<p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr </p>
+						</div>
+	
+					<div class="col-sm mt-3" style="padding-top:10px; padding-left:40px;">
+						<h1 style="color: #2ecc71; font-family: Poppins;
+						font-size: 14px;"> Medium</h1>
+					</div>
+	
+					<div class="col-s mt-3" style="padding-top:10px; padding-left:40px;">
+						<h5> 12 hours ago</h5>
+						</div>
+	
+						<div class="col-sm mt-3 mr-0" style=" padding-left:30px;">
+								<div class="d-flex ">
+									<div class="outer_container">
+										<div class="inner_container">
+											<p>CC</p>
+										</div>
+									</div>
+								</div>
+						</div>
+					</div>
+			</div>
+			</div>
+
+
+		<!--Message Box-->
+		<div class="row"> 
+				<div class ="col" style="padding-top: 25px;">
+						<div class="tick"> <img src="images/tick.png" alt=""></div>
+				</div>
+	
+				<div class="container" id="message"> 
+					<div class ="row">
+	
+						<div class="col-0 my-3 ml-1">
+							<img src="images/messageicon.png" alt="">
+						</div>
+	
+						<div class="col-3 mt-3">
+							<h4 style="margin-bottom: 3px;"> Matthew Dunne </h4>
+							<h5> Migration to Shopify <span style="color: #25bbf3;">(#4345)</span> </h5>
+						</div>
+				
+						<div class="col-0 mt-3" style="padding-top:10px;">
+							<p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr </p>
+						</div>
+	
+					<div class="col-sm mt-3" style="padding-top:10px; padding-left:40px;">
+						<h1 style="color: #2ecc71; font-family: Poppins;
+						font-size: 14px;"> Medium</h1>
+					</div>
+	
+					<div class="col-s mt-3" style="padding-top:10px; padding-left:40px;">
+						<h5> 12 hours ago</h5>
+						</div>
+	
+						<div class="col-sm mt-3 mr-0" style=" padding-left:30px;">
+								<div class="d-flex ">
+									<div class="outer_container">
+										<div class="inner_container">
+											<p>CC</p>
+										</div>
+									</div>
+								</div>
+						</div>
+					</div>
+			</div>
+			</div>
+
+
+		<!--Message Box-->
+		<div class="row"> 
+				<div class ="col" style="padding-top: 25px;">
+						<div class="tick"> <img src="images/tick.png" alt=""></div>
+				</div>
+	
+				<div class="container" id="message"> 
+					<div class ="row">
+	
+						<div class="col-0 my-3 ml-1">
+							<img src="images/messageicon.png" alt="">
+						</div>
+	
+						<div class="col-3 mt-3">
+							<h4 style="margin-bottom: 3px;"> Matthew Dunne </h4>
+							<h5> Migration to Shopify <span style="color: #25bbf3;">(#4345)</span> </h5>
+						</div>
+				
+						<div class="col-0 mt-3" style="padding-top:10px;">
+							<p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr </p>
+						</div>
+	
+					<div class="col-sm mt-3" style="padding-top:10px; padding-left:40px;">
+						<h1 style="color: #2ecc71; font-family: Poppins;
+						font-size: 14px;"> Medium</h1>
+					</div>
+	
+					<div class="col-s mt-3" style="padding-top:10px; padding-left:40px;">
+						<h5> 12 hours ago</h5>
+						</div>
+	
+						<div class="col-sm mt-3 mr-0" style=" padding-left:30px;">
+								<div class="d-flex ">
+									<div class="outer_container">
+										<div class="inner_container">
+											<p>CC</p>
+										</div>
+									</div>
+								</div>
+						</div>
+					</div>
+			</div>
+			</div>
+
+		<!--Message Box-->
+		<div class="row"> 
+				<div class ="col" style="padding-top: 25px;">
+						<div class="tick"> <img src="images/tick.png" alt=""></div>
+				</div>
+	
+				<div class="container" id="message"> 
+					<div class ="row">
+	
+						<div class="col-0 my-3 ml-1">
+							<img src="images/messageicon.png" alt="">
+						</div>
+	
+						<div class="col-3 mt-3">
+							<h4 style="margin-bottom: 3px;"> Matthew Dunne </h4>
+							<h5> Migration to Shopify <span style="color: #25bbf3;">(#4345)</span> </h5>
+						</div>
+				
+						<div class="col-0 mt-3" style="padding-top:10px;">
+							<p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr </p>
+						</div>
+	
+					<div class="col-sm mt-3" style="padding-top:10px; padding-left:40px;">
+						<h1 style="color: #2ecc71; font-family: Poppins;
+						font-size: 14px;"> Medium</h1>
+					</div>
+	
+					<div class="col-s mt-3" style="padding-top:10px; padding-left:40px;">
+						<h5> 12 hours ago</h5>
+						</div>
+	
+						<div class="col-sm mt-3 mr-0" style=" padding-left:30px;">
+								<div class="d-flex ">
+									<div class="outer_container">
+										<div class="inner_container">
+											<p>CC</p>
+										</div>
+									</div>
+								</div>
+						</div>
+					</div>
+			</div>
+			</div>
+		<div class="row"> <!--Last message box-->
+			<div class="container" id="messagelast"> 
+			</div>
+		</div>
+
+</div> 
+
+<!--Rightbar-->
+<div class="container-fluid" id="rightBar">
+	<div class=	col-2 >
+		<div class="row">
+			<img class="img-responsive empty" src="images/empty.png" alt=""> 
+		</div>
+	</div>
+</div> 
+
+
+
+</body>
+</html>

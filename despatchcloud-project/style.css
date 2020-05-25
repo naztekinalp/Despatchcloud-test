@@ -1,0 +1,282 @@
+p {
+  color: #627688;
+  font-family: Poppins;
+  font-size: 14px;
+}
+
+h1 {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.72px;
+}
+
+h3 {
+  color: #202020;
+  font-family: Poppins;
+  font-size: 18px;
+}
+
+h4 {
+  width: 131px;
+  height: 24px;
+  color: #33475a;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+h5 {
+  color: #212326;
+  font-family: Poppins;
+  font-size: 13px;
+}
+
+h6 {
+  color: #33475a;
+  font-size: 13px;
+  font-family: Poppins;
+}
+
+.no-border {
+  border: 0;
+  box-shadow: none;
+  width: 500px !important;
+  outline: none !important;
+}
+
+.navbar {
+  height: 74px;
+  top: 0%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.13);
+  border-bottom: 1px solid #f5f6f6;
+}
+
+.container {
+  height: 100%;
+  align-content: center;
+}
+
+.outer_container {
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: -1px 1px 6px rgba(0, 0, 0, 0.24);
+}
+
+.inner_container {
+  border-radius: 50%;
+  padding: 5px;
+  background-color: #ffcb78;
+  height: 35px;
+  width: 35px;
+  border: 1px solid white;
+}
+
+.inner_container p {
+  width: 19px;
+  height: 21px;
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.outer_container .green_icon {
+  background-color: #2ecc71;
+  position: absolute;
+  right: 2px;
+  top: 0px;
+  height: 10px;
+  width: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.userInfo {
+  line-height: 1px;
+}
+
+.userName {
+  color: #2c2c2c;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.userRole {
+  color: #2c2c2c;
+  font-family: Poppins;
+  font-size: 9px;
+  font-weight: 300;
+}
+
+.tickets {
+  border-radius: 45%;
+  font-size: 10px;
+  color: #fff;
+  text-align: center;
+  background: #627688;
+  width: 35px;
+  height: 23px;
+  font-size: 12px;
+}
+
+.open {
+  margin-right: 11px;
+  margin-top: 3px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #25bbf3;
+}
+
+.awaitingreply {
+  margin-right: 11px;
+  margin-top: 3px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 1px solid #f39c12;
+}
+
+.resolved {
+  margin-right: 11px;
+  margin-top: 3px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 1px solid #2ecc71;
+}
+
+.archived {
+  margin-right: 11px;
+  margin-top: 3px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+}
+
+.urgent {
+  margin-right: 11px;
+  margin-top: 3px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #e74c3c;
+}
+
+.high {
+  margin-right: 11px;
+  margin-top: 3px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 1px solid #f39c12;
+}
+
+.medium {
+  margin-right: 11px;
+  margin-top: 3px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #2ecc71;
+}
+
+.low {
+  margin-right: 11px;
+  margin-top: 3px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 1px solid #6ad0f6;
+}
+
+.trash {
+  border-radius: 50%;
+  font-size: 10px;
+  color: #000000;
+  text-align: center;
+  background: #e1e1e1;
+  width: 14px;
+  height: 14px;
+  margin-top: -22px;
+  margin-left: -50px;
+}
+
+#message {
+  height: 73px;
+  width: 1005px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.13);
+  border-radius: 8px;
+  background-color: white;
+  object-fit: cover;
+  margin-right: 34px;
+  border-left-style: solid;
+  border-left-color: #25bbf3;
+  border-left-width: 6px;
+  margin-bottom: 15px;
+}
+
+#messagelast {
+  margin-right: 34px;
+  border-left-style: solid;
+  border-left-color: #25bbf3;
+  border-left-width: 6px;
+  border-bottom-width: 6px;
+  margin-bottom: 5px;
+  width: 1005px;
+  height: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.13);
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+#drawerSearch {
+  width: 212px !important;
+  height: 36px !important;
+  border-radius: 5px !important;
+  border: 1px solid #d8d8d8 !important;
+  margin-left: 10px;
+}
+
+.empty {
+  left: 80%;
+  top: 40%;
+  position: fixed;
+  width: 365px;
+  height: 312px;
+  justify-content: center;
+  margin-left: -40px;
+}
+
+#rightBar {
+  justify-content: center;
+}
+
+.createTicket {
+  width: 190px;
+  height: 41px;
+  border-radius: 0 50px 50px 0;
+  background-color: #25bbf3;
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: 14px;
+  letter-spacing: 0.56px;
+  display: table-cell;
+  padding: 10px 0;
+}
+
+.tick {
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  background-color: #25bbf3;
+  color: #ffffff;
+  font-size: 10px;
+  text-align: center;
+}
